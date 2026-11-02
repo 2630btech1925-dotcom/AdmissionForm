@@ -1,0 +1,207 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KIET Admission Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            color: purple;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            color: red;
+        }
+
+        form {
+            background-color: white;
+            width: 600px;
+            margin: auto;
+            padding: 25px;
+            border: 2px solid purple;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            margin-top: 5px;
+            margin-bottom: 15px;
+            padding: 8px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 95%;
+        }
+
+        textarea {
+            height: 70px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: purple;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+        }
+
+        input[type="reset"] {
+            background-color: gray;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>KIET Deemed to be University</h1>
+
+    <p style="text-align:center;">
+        Delhi NCR, Ghaziabad, Uttar Pradesh
+    </p>
+
+    <h2>Student Admission Form</h2>
+
+    <form>
+
+        <label>Student Name:</label><br>
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <br>
+
+        <label>Mobile Number:</label><br>
+        <input type="tel" name="mobile" placeholder="Enter mobile number" required>
+        <br>
+
+        <label>Date of Birth:</label><br>
+        <input type="date" name="dob">
+        <br>
+
+        <label>Gender:</label><br>
+
+        <input type="radio" name="gender" value="male">
+        Male
+
+        <input type="radio" name="gender" value="female">
+        Female
+
+        <input type="radio" name="gender" value="other">
+        Other
+
+        <br><br>
+
+        <label>Course:</label><br>
+
+        <select name="course">
+
+            <option>-- Select Course --</option>
+
+            <option>B.Tech CSE</option>
+
+            <option>B.Tech CSE AI & ML</option>
+
+            <option>B.Tech ECE</option>
+
+            <option>B.Tech Mechanical</option>
+
+            <option>B.Pharm</option>
+
+            <option>MBA</option>
+
+        </select>
+
+        <br>
+
+        <label>Class 12 Percentage:</label><br>
+        <input type="text" name="percentage" placeholder="Enter percentage">
+        <br>
+
+        <label>Entrance Exam:</label><br>
+
+        <select name="exam">
+
+            <option>-- Select Exam --</option>
+
+            <option>JEE Main</option>
+
+            <option>CUET</option>
+
+            <option>Other</option>
+
+            <option>None</option>
+
+        </select>
+
+        <br>
+
+        <label>Address:</label><br>
+
+        <textarea
+            name="address"
+            placeholder="Enter your address">
+        </textarea>
+
+        <br>
+
+        <label>City:</label><br>
+        <input type="text" name="city" placeholder="Enter city">
+        <br>
+
+        <label>State:</label><br>
+
+        <select name="state">
+
+            <option>-- Select State --</option>
+
+            <option>Uttar Pradesh</option>
+
+            <option>Delhi</option>
+
+            <option>Haryana</option>
+
+            <option>Rajasthan</option>
+
+            <option>Other</option>
+
+        </select>
+
+        <br>
+
+        <label>Upload Photo:</label><br>
+        <input type="file" name="photo">
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+
+</html>
+```
